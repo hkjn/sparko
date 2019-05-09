@@ -91,7 +91,7 @@ func handleRPC(w http.ResponseWriter, r *http.Request) {
 			json.NewEncoder(w).Encode(LightningError{
 				Type:     "lightning",
 				Name:     "LightningError",
-				Message:  cmderr.Msg,
+				// xx Message:  cmderr.Msg,
 				Code:     cmderr.Code,
 				FullType: "lightning",
 			})
